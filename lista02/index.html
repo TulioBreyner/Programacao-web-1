@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="vitrine" id="vitrine-produtos">
+            <div class="produto">
+                <img src="imagens/aventador.jpeg">
+                <h2>Lamborghini Aventador</h2>
+                <p>R$ 8.200.000,00</p>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(0)">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/impala.jpeg">
+                <h2>Impala 1967</h2>
+                <p>R$ 600.000,00</p>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(1)">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/purosangue.jpeg">
+                <h2>Ferrari Purosangue</h2>
+                <p>R$ 5.200.000,00</p>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(2)">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/urus.jpg">
+                <h2>Lamborghini Urus</h2>
+                <p>R$ 1.800.000,00</p>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(3)">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/Kawasaki-H2R.jpg">
+                <h2>Kawasaki H2R</h2>
+                <p>R$ 190.000,00</p>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(4)">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/cbr-1000rr-r.png">
+                <h2>CBR 1000rr-r</h2>
+                <p>R$ 160.000,00</p>
+                <button class="btn-carrinho" onclick="adicionarAoCarrinho(5)">Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <aside class="carrinho">
+            <h2>Carrinho</h2>
+            <div id="lista-carrinho"></div>
+            <div class="total">
+                Total: R$ <span id="preco-total">0.00</span>
+            </div>
+            <button class="btn-comprar">Comprar</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
