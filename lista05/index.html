@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Extensões</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
+<body>
+
+    <main class="extensions-manager">
+        <header class="extensions-header">
+            <h1>Extensions list</h1>
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <img id="theme-icon" src="./assets/images/icon-sun.svg" alt="Alternar tema">
+            </button>
+        </header>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="inactive">Inactive</button>
+        </div>
+
+        <div class="extensions-list" id="extensions-list">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
